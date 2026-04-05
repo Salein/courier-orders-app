@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'http://localhost:8000/api',
+  baseURL: '/api', // relative — works via Vite dev proxy and when served from same host
   headers: {
     'Content-Type': 'application/json'
   }
