@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import useOrderStore from '../store/orderStore'
 import { uploadPhoto } from '../api/client'
-import type { UploadStatus } from '../store/orderStore'
+import type { UploadStatus } from '../types'
 
 function Home() {
   const { orders, uploadStatus, fetchOrders, setUploadStatus } = useOrderStore()
